@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/reaper"
+                android:id="@+id/iv1"
+            />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/bastion"
+                android:id="@+id/iv2"
+            />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TV example"
+                android:textColor="#CCAA77"
+                android:textSize="16sp"
+                android:background="#EEEEEE"
+                android:elevation="10dp"
+                android:id="@+id/tv1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="5"
+            >
+
+            <ImageView
+                android:layout_weight="2"
+                android:layout_width="96dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hanzo"
+                android:id="@+id/iv3"
+            />
+
+            <ImageView
+                android:layout_weight="2"
+                android:layout_width="96dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pharah"
+                android:id="@+id/iv4"
+            />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="96dp"
+                android:layout_height="0dp"
+                android:text="TV example"
+                android:textColor="#CCAA77"
+                android:textSize="16sp"
+                android:background="#EEEEEE"
+                android:elevation="10dp"
+                android:id="@+id/tv2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
